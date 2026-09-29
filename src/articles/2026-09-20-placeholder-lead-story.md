@@ -1,9 +1,9 @@
 ---
 title: A Brief Introduction to Anthropology
 date: 2026-09-20
-deck: This is the standfirst — one or two sentences that sit under the headline
-  and pull the reader into the piece. Replace it with your own.
-author: Your Name
+deck: Anthropology is the scientific study of humans, human behavior, and human
+  societies; "past, current, present".
+author: Jacob Opira
 featured: true
 image: /images/uploads/civ_compressed.jpg
 image_alt: The world across times and timelines
