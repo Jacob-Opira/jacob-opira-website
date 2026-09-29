@@ -1,5 +1,5 @@
 ---
-title: Should I question everything I have ever been told?
+title: Should I question everything I've ever been told?
 date: 2026-09-29T13:40:00.000+02:00
 deck: 'Solipsism draws a hard "reality-boundary" between what we experience
   ourselves and what others tell us. '
