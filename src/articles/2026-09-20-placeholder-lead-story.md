@@ -19,4 +19,4 @@ Anthropology is often divided into four main subfields:
 3. **Archaeology** – Reconstructs past human societies through material remains such as tools, structures, and artifacts.
 4. **Linguistic anthropology** – Explores language as a cultural and social phenomenon, including how language shapes and reflects thought and identity.
 
-In short, anthropology asks what it means to be human—biologically, culturally, historically, and linguistically.
+In short, anthropology asks what it means to be human— ontologically, biologically, culturally, historically, linguistically, and epistemically.
