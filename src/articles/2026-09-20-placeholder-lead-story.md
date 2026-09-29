@@ -5,8 +5,8 @@ deck: This is the standfirst — one or two sentences that sit under the headlin
   and pull the reader into the piece. Replace it with your own.
 author: Your Name
 featured: true
-image: /images/uploads/civ.jpeg
-image_alt: Placeholder image — replace via the Image field in the editor
+image: /images/uploads/civ_compressed.jpg
+image_alt: The world across times and timelines
 ---
 Anthropology is the scientific study of humans, human behavior, and human societies, both past and present. The term comes from the Greek words *anthropos* ("human") and *logos* ("study" or "knowledge").
 
