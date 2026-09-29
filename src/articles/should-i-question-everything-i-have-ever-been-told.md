@@ -26,8 +26,8 @@ The key point is **epistemic asymmetry**: I have direct, privileged access to m
 
 ## Varieties
 
-* **Metaphysical (ontological) solipsism** – Only the self truly exists; everything else is an illusion or projection. Rarely held seriously, as it is nearly impossible to live by.
-* **Epistemological solipsism** – I cannot *know* anything exists beyond my own mind, even if other things might exist. This is the more defensible and widely discussed form.
+* **Metaphysical (ontological) solipsism** – Only the self truly exists; everything else is an illusion or projection. Perhaps rarely held seriously, as it is, reportedly, nearly impossible to live by.
+* **Epistemological solipsism** – I cannot *know* anything exists beyond my own mind, even if other things might exist. 
 * **Methodological solipsism** – A stance in philosophy of mind (notably in Husserl and some cognitive science) that treats the individual mind as the starting point for analysis, without denying other minds.
 * **Egocentric presentism** – Only my present experience is fully real; other perspectives exist only relative to mine.
 
@@ -35,7 +35,7 @@ The key point is **epistemic asymmetry**: I have direct, privileged access to m
 
 1. **The problem of other minds** – I can observe behavior, but never directly experience another's thoughts. How do I know anyone else is conscious?
 2. **The external world** – Dreams, hallucinations, and virtual realities show that experience can seem real without corresponding to an external world. How can I rule out that all experience is like this?
-3. **The criterion problem** – If all I ever access are my own mental states, what evidence could possibly count against solipsism? This is what makes it so hard to refute.
+3. **The criterion problem** – If all I ever access are my own mental states, what evidence could possibly count against solipsism?
 
 ## Common Responses
 
