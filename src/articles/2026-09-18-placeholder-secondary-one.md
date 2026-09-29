@@ -2,7 +2,7 @@
 title: A Brief Introduction to Epistemology
 date: 2026-09-29T11:43:00.000+02:00
 deck: '"What is knowledge — and how do we know what we think we know?"'
-author: Your Name
+author: Jacob Opira
 featured: false
 image: /images/uploads/thinker.jpg
 image_alt: '"I think, therefore I exist"?'
