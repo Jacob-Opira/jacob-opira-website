@@ -4,6 +4,7 @@ backend:
 
 media_folder: "src/images/uploads"
 public_folder: "/images/uploads"
+relative_path: true
 
 collections:
   - name: "articles"
