@@ -5,7 +5,7 @@ deck: '"What is knowledge — and how do we know what we think we know?"'
 author: Your Name
 featured: false
 image: /images/uploads/thinker.jpg
-image_alt: Placeholder image — replace via the Image field in the editor
+image_alt: '"I think, therefore I exist"?'
 ---
 # Epistemology
 
