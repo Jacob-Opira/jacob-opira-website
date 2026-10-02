@@ -6,6 +6,8 @@ author: Jacob Opira
 featured: false
 image: /images/uploads/thinker.jpg
 image_alt: '"I think, therefore I exist"?'
+layout_type: "hero" # Options: hero, medium, compact, opinion
+section: "frontpage" # Options: frontpage, philosophy, essays, archive
 ---
 # Epistemology
 
