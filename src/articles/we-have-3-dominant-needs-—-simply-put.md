@@ -4,7 +4,7 @@ date: 2026-09-29T23:08:00.000+02:00
 deck: Achievement, Power, Affiliation
 author: Jacob Opira
 featured: false
-image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.XV9LbaX_EDebMM8urb5BvAHaE8%3Fr%3D0%26pid%3DApi&f=1&ipt=0aa29d659b3b8791a26ccff721ea7678e9f98c8b29401ba28cc619f12cdcdbe0&ipo=images
+image: /images/uploads/mclelland.jpg
 image_alt: "David McClelland: A Brief Introduction"
 ---
 #### *David McClelland was a pioneering **motivation psychologist** who identified three fundamental human needs—**achievement, power, and affiliation**—and developed the TAT-based method to measure them. His work connected individual psychology to societal outcomes, challenged IQ-based assessments, and reshaped how organizations think about competency and motivation.*
