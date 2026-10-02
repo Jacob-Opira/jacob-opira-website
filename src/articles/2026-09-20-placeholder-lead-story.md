@@ -7,6 +7,8 @@ author: Jacob Opira
 featured: true
 image: /images/uploads/civ_compressed.jpg
 image_alt: The world across times and timelines
+layout_type: "hero" # Options: hero, medium, compact, opinion
+section: "frontpage" # Options: frontpage, philosophy, essays, archive
 ---
 Anthropology is the scientific study of humans, human behavior, and human societies, both past and present. The term comes from the Greek words *anthropos* ("human") and *logos* ("study" or "knowledge").
 
