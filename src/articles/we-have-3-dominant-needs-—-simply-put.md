@@ -52,7 +52,7 @@ This landmark book analyzed the role of achievement motivation in **economic de
 
 ## Critique of Traditional Intelligence Testing
 
-McClelland argued that **IQ and personality tests were poor predictors of job competency**. He advocated for **competency-based assessments**—evaluating demonstrated skills in relevant contexts rather than standardized scores. His ideas became standard practice in corporate hiring and inspired the modern competency movement.
+McClelland argued that **IQ and personality tests were poor predictors of job competency**. He advocated for **competency-based assessments**—evaluating demonstrated skills in relevant contexts rather than standardized scores. His ideas inspired the modern competency movement and became widespread, albeit not standard insight or practice everywhere in corporate hiring.
 
 ## Critiques
 
