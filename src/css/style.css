@@ -309,7 +309,7 @@ main {
   text-align: center;
 }
 
-/* ---- Responsive ---- */
+/* ---- Responsive Base ---- */
 @media (max-width: 780px) {
   .edition__top-row { grid-template-columns: 1fr; }
   .below-row { grid-template-columns: 1fr; gap: 20px; }
@@ -321,7 +321,8 @@ main {
 @media (prefers-reduced-motion: no-preference) {
   a { transition: text-decoration-color 0.15s ease; }
 }
-/* Container & Rule Lines */
+
+/* ---- Broadsheet Grid Base & Containers ---- */
 .broadsheet-grid {
   max-width: 1280px;
   margin: 0 auto;
@@ -343,25 +344,10 @@ main {
   gap: 2rem;
 }
 
-/* Secondary Section Grids */
-.three-column-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-/* Accumulating Multi-Column Feed */
-.multi-column-masonry {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
 .compact-card {
   display: flex;
   gap: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .compact-card .thumb {
@@ -369,13 +355,7 @@ main {
   height: 80px;
   object-fit: cover;
 }
-/* Responsive fallbacks for Broadsheet Grid */
-@media (max-width: 768px) {
-  .lead-section,
-  .three-column-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
 /* Editorial Kicker / Category Badge */
 .kicker {
   display: block;
@@ -387,7 +367,36 @@ main {
   color: var(--accent);
   margin-bottom: 0.35rem;
 }
-/* Step 3: Middle Tier (Opinion/Essay Strip) */
+
+/* Hero Image & Vertical Rhythm Polish */
+.hero-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  max-height: 420px;
+  margin-bottom: 0.75rem;
+}
+
+.hero-card h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  line-height: 1.1;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.hero-card .excerpt {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.hero-card time {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* Middle Tier Base Styling */
 .middle-tier-section {
   margin: 2rem 0;
 }
@@ -400,11 +409,6 @@ main {
   border-bottom: 2px solid var(--ink);
   padding-bottom: 0.3rem;
   margin-bottom: 1.25rem;
-}
-
-.opinion-card {
-  padding-top: 0.5rem;
-  border-top: 3px double var(--rule-strong);
 }
 
 .opinion-card h3 {
@@ -434,19 +438,19 @@ main {
   color: var(--muted);
 }
 
-/* Step 4: Enhanced Grid Density & Vertical Rule Separators */
+/* Enhanced Grid Density & Vertical Rule Separators */
 
 /* Middle Tier: 3-Column Grid with Vertical Borders */
 .middle-tier-section .three-column-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0; /* Clear gap to handle borders manually */
+  gap: 0;
 }
 
 .middle-tier-section .opinion-card {
   padding: 0 1.25rem;
   border-left: 1px solid var(--rule-soft);
-  border-top: none; /* Override standard top border */
+  border-top: none;
 }
 
 .middle-tier-section .opinion-card:first-child {
@@ -462,7 +466,7 @@ main {
 .multi-column-masonry {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem 0; /* Row gap of 2rem, column gap handled by padding/borders */
+  gap: 2rem 0;
 }
 
 .multi-column-masonry .compact-card {
@@ -471,7 +475,6 @@ main {
   border-left: 1px solid var(--rule-soft);
 }
 
-/* Remove left border on left-most column items in 3-column layout */
 .multi-column-masonry .compact-card:nth-child(3n + 1) {
   padding-left: 0;
   border-left: none;
@@ -483,6 +486,7 @@ main {
 
 /* Responsive Fallbacks */
 @media (max-width: 900px) {
+  .lead-section,
   .middle-tier-section .three-column-grid,
   .multi-column-masonry {
     grid-template-columns: 1fr;
