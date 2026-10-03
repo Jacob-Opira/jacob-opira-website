@@ -1,8 +1,0 @@
-<article class="hero-card">
-  {% if article.data.featured_image %}
-    <img src="{{ article.data.featured_image }}" alt="{{ article.data.title }}">
-  {% endif %}
-  <h2><a href="{{ article.url }}">{{ article.data.title }}</a></h2>
-  <p class="excerpt">{{ article.data.excerpt }}</p>
-  <time>{{ article.date | date("DD MMMM YYYY") }}</time>
-</article>
