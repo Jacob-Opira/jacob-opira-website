@@ -2,6 +2,11 @@
   {% if article.data.image %}
     <img src="{{ article.data.image }}" alt="{{ article.data.image_alt | default('') }}">
   {% endif %}
+  
+  {% if article.data.kicker or article.data.category %}
+    <span class="kicker">{{ article.data.kicker | default(article.data.category) }}</span>
+  {% endif %}
+  
   <h2><a href="{{ article.url }}">{{ article.data.title }}</a></h2>
   {% if article.data.deck %}
     <p class="excerpt">{{ article.data.deck }}</p>
