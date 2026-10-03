@@ -433,3 +433,66 @@ main {
   font-size: 0.72rem;
   color: var(--muted);
 }
+
+/* Step 4: Enhanced Grid Density & Vertical Rule Separators */
+
+/* Middle Tier: 3-Column Grid with Vertical Borders */
+.middle-tier-section .three-column-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0; /* Clear gap to handle borders manually */
+}
+
+.middle-tier-section .opinion-card {
+  padding: 0 1.25rem;
+  border-left: 1px solid var(--rule-soft);
+  border-top: none; /* Override standard top border */
+}
+
+.middle-tier-section .opinion-card:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.middle-tier-section .opinion-card:last-child {
+  padding-right: 0;
+}
+
+/* Lower Tier: 3-Column Sprawl Archive with Print Separators */
+.multi-column-masonry {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 0; /* Row gap of 2rem, column gap handled by padding/borders */
+}
+
+.multi-column-masonry .compact-card {
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  border-bottom: 1px solid var(--rule-soft);
+  border-left: 1px solid var(--rule-soft);
+}
+
+/* Remove left border on left-most column items in 3-column layout */
+.multi-column-masonry .compact-card:nth-child(3n + 1) {
+  padding-left: 0;
+  border-left: none;
+}
+
+.multi-column-masonry .compact-card:nth-child(3n) {
+  padding-right: 0;
+}
+
+/* Responsive Fallbacks */
+@media (max-width: 900px) {
+  .middle-tier-section .three-column-grid,
+  .multi-column-masonry {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .middle-tier-section .opinion-card,
+  .multi-column-masonry .compact-card {
+    padding: 0 0 1.25rem 0;
+    border-left: none;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+}
