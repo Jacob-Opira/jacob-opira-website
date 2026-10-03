@@ -2,25 +2,44 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "src/images/uploads"
-public_folder: "/images/uploads"
-relative_path: true
+media_folder: "src/images"
+public_folder: "/images"
 
 collections:
   - name: "articles"
     label: "Articles"
-    label_singular: "Article"
     folder: "src/articles"
     create: true
-    slug: "{{slug}}"
-    identifier_field: title
-    sortable_fields: ["date", "title"]
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Standfirst / deck", name: "deck", widget: "text", required: false, hint: "The one- or two-sentence summary shown under the headline." }
-      - { label: "Author", name: "author", widget: "string", default: "The Dispatch", required: false }
-      - { label: "Lead story on front page?", name: "featured", widget: "boolean", default: false, hint: "Only one article should be marked as the lead at a time. If none are marked, the most recent article becomes the lead automatically." }
-      - { label: "Image", name: "image", widget: "image", required: false }
-      - { label: "Image caption / alt text", name: "image_alt", widget: "string", required: false }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "Kevin", required: false }
+      - { label: "Deck / Subtitle", name: "deck", widget: "string", required: false }
+      
+      # Controls visual card archetype on the layout
+      - label: "Layout Type"
+        name: "layout_type"
+        widget: "select"
+        options:
+          - { label: "Hero (Large Feature)", value: "hero" }
+          - { label: "Medium (Standard)", value: "medium" }
+          - { label: "Compact (Sidebar/Archive)", value: "compact" }
+          - { label: "Text-Only (Opinion Strip)", value: "opinion" }
+        default: "compact"
+
+      # Controls horizontal broadsheet section placement
+      - label: "Section Placement"
+        name: "section"
+        widget: "select"
+        options:
+          - { label: "Front Page Lead", value: "frontpage" }
+          - { label: "Essays & Dispatches", value: "essays" }
+          - { label: "Philosophy & Inquiry", value: "philosophy" }
+          - { label: "Archive / Deep Storage", value: "archive" }
+        default: "frontpage"
+
+      - { label: "Featured Post", name: "featured", widget: "boolean", default: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Image Alt Text", name: "image_alt", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
