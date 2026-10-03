@@ -11,9 +11,9 @@
 </head>
 <body>
   {% include "partials/header.njk" %}
-<main>
+{% block content %}
     {{ content | safe }}
-  </main>
+  {% endblock %}
   {% include "partials/footer.njk" %}
 </body>
 </html>
