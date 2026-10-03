@@ -1,9 +1,9 @@
-{% set item = post | default(article) %}
+{% set item = article %}
 <article class="compact-card">
   {% if item.data.image %}
     <img src="{{ item.data.image }}" alt="{{ item.data.image_alt | default('') }}" class="thumb">
   {% endif %}
-  <div class="compact-card__body">
+  <div class="compact-card_body">
     <h3><a href="{{ item.url }}">{{ item.data.title }}</a></h3>
     {% if item.data.deck %}
       <p>{{ item.data.deck }}</p>
