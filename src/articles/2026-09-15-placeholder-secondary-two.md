@@ -8,6 +8,8 @@ image: /images/uploads/unimind-comp.jpg
 image_alt: '"How do we know if we or the world exists"? Where epistemology
   asks how we know, ontology asks what there is to know—and whether different
   peoples might live in genuinely different worlds.'
+layout_type: "hero" # Options: hero, medium, compact, opinion
+section: "frontpage" # Options: frontpage, philosophy, essays, archive
 ---
 # A Brief Introduction to Ontology
 
