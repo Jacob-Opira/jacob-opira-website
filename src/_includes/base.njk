@@ -1,56 +1,67 @@
-{% extends "base.njk" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title | default('Jacob Opira') }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    {% include "partials/header.njk" %}
 
-{% block content %}
-<main class="broadsheet-grid">
+    <main class="broadsheet-grid">
 
-  {# TOP SECTION: Lead Article + Recent Items #}
-  <section class="lead-section">
-    {% set leadArticle = collections.articles | reverse | first %}
-    
-    {% if leadArticle %}
-      <div class="lead-hero">
-        {% set article = leadArticle %}
-        {% include "partials/card-hero.njk" %}
-      </div>
-    {% endif %}
-
-    <div class="lead-sidebar">
-      <h4 class="section-tag">ALSO TODAY</h4>
-      {% for article in collections.articles | reverse %}
-        {% if loop.index > 1 and loop.index <= 4 %}
-          {% include "partials/card-compact.njk" %}
+      {# TOP SECTION: Lead Article + Recent Items #}
+      <section class="lead-section">
+        {% set leadArticle = collections.articles | reverse | first %}
+        
+        {% if leadArticle %}
+          <div class="lead-hero">
+            {% set article = leadArticle %}
+            {% include "partials/card-hero.njk" %}
+          </div>
         {% endif %}
-      {% endfor %}
-    </div>
-  </section>
 
-  <hr class="broadsheet-divider">
+        <div class="lead-sidebar">
+          <h4 class="section-tag">ALSO TODAY</h4>
+          {% for article in collections.articles | reverse %}
+            {% if loop.index > 1 and loop.index <= 4 %}
+              {% include "partials/card-compact.njk" %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
 
-  {# MIDDLE TIER: Opinion / Text-Heavy Section (Articles 5 to 7) #}
-  <section class="middle-tier-section">
-    <h3 class="middle-tier-header">ESSAYS & PERSPECTIVES</h3>
-    <div class="three-column-grid">
-      {% for article in collections.articles | reverse %}
-        {% if loop.index > 4 and loop.index <= 7 %}
-          {% include "partials/card-opinion.njk" %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </section>
+      <hr class="broadsheet-divider">
 
-  <hr class="broadsheet-divider">
+      {# MIDDLE TIER: Opinion / Text-Heavy Section (Articles 5 to 7) #}
+      <section class="middle-tier-section">
+        <h3 class="middle-tier-header">ESSAYS & PERSPECTIVES</h3>
+        <div class="three-column-grid">
+          {% for article in collections.articles | reverse %}
+            {% if loop.index > 4 and loop.index <= 7 %}
+              {% include "partials/card-opinion.njk" %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
 
-  {# LOWER TIER: Sprawl Archive (Articles 8+) #}
-  <section class="accumulating-archive">
-    <h3 class="section-header">DISPATCHES & ARCHIVE</h3>
-    <div class="multi-column-masonry">
-      {% for article in collections.articles | reverse %}
-        {% if loop.index > 7 %}
-          {% include "partials/card-compact.njk" %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </section>
+      <hr class="broadsheet-divider">
 
-</main>
-{% endblock %}
+      {# LOWER TIER: Sprawl Archive (Articles 8+) #}
+      <section class="accumulating-archive">
+        <h3 class="section-header">DISPATCHES & ARCHIVE</h3>
+        <div class="multi-column-masonry">
+          {% for article in collections.articles | reverse %}
+            {% if loop.index > 7 %}
+              {% include "partials/card-compact.njk" %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+
+    </main>
+
+    {% include "partials/footer.njk" %}
+</body>
+</html>
