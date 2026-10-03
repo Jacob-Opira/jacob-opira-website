@@ -387,3 +387,49 @@ main {
   color: var(--accent);
   margin-bottom: 0.35rem;
 }
+/* Step 3: Middle Tier (Opinion/Essay Strip) */
+.middle-tier-section {
+  margin: 2rem 0;
+}
+
+.middle-tier-header {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.25rem;
+}
+
+.opinion-card {
+  padding-top: 0.5rem;
+  border-top: 3px double var(--rule-strong);
+}
+
+.opinion-card h3 {
+  font-size: 1.15rem;
+  line-height: 1.2;
+  margin: 0.35rem 0;
+}
+
+.opinion-card h3 a {
+  text-decoration: none;
+}
+
+.opinion-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.opinion-card .excerpt {
+  font-size: 0.88rem;
+  line-height: 1.35;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.opinion-card time {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--muted);
+}
