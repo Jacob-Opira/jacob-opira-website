@@ -1,36 +1,50 @@
----
-layout: base.njk
-title: null
----
-{% set fp = collections.articles | frontPage %}
-{% set lead = fp.lead %}
-{% set secondaries = fp.secondaries %}
+{% extends "base.njk" %}
 
-<div class="edition">
-  <div class="edition__top-row">
-    <section class="lead-story">
-      {% if lead.data.image %}
-        <img class="lead-story__image" src="{{ lead.data.image }}" alt="{{ lead.data.image_alt | default('') }}">
-      {% endif %}
-      <h1 class="lead-story__headline"><a href="{{ lead.url }}">{{ lead.data.title }}</a></h1>
-      {% if lead.data.deck %}<p class="lead-story__deck">{{ lead.data.deck }}</p>{% endif %}
-      <p class="byline">By {{ lead.data.author | default("The Dispatch") }} &middot; {{ lead.data.date | readableDate }}</p>
-    </section>
+{% block content %}
+<main class="broadsheet-grid">
 
-    <aside class="secondary-list">
-      <p class="secondary-list__label">Also Today</p>
-      {% for item in secondaries %}
-        <article class="secondary-item">
-          {% if item.data.image %}
-            <img class="secondary-item__image" src="{{ item.data.image }}" alt="{{ item.data.image_alt | default('') }}">
-          {% endif %}
-          <div class="secondary-item__body">
-            <h2 class="secondary-item__headline"><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
-            {% if item.data.deck %}<p class="secondary-item__deck">{{ item.data.deck }}</p>{% endif %}
-            <p class="byline">{{ item.data.date | readableDate }}</p>
-          </div>
+  {# TOP TIER: Hero + Secondary Stack #}
+  <section class="lead-section">
+    {% set leadArticle = collections.articles | reverse | first %}
+    <div class="lead-hero">
+      {% set article = leadArticle %}
+      {% include "partials/card-hero.njk" %}
+    </div>
+
+    <div class="lead-sidebar">
+      <h4 class="section-tag">ALSO TODAY</h4>
+      {% for article in collections.articles | reverse | slice(1, 4) %}
+        {% include "partials/card-compact.njk" %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <hr class="broadsheet-divider">
+
+  {# SECOND TIER: Opinion / Essay Strip #}
+  <section class="opinion-strip">
+    <h3 class="section-header">ESSAYS & DISPATCHES</h3>
+    <div class="three-column-grid">
+      {% for article in collections.articles | reverse | slice(4, 7) %}
+        <article class="opinion-card">
+          <h4><a href="{{ article.url }}">{{ article.data.title }}</a></h4>
+          <p>{{ article.data.excerpt }}</p>
         </article>
       {% endfor %}
-    </aside>
-  </div>
-</div>
+    </div>
+  </section>
+
+  <hr class="broadsheet-divider">
+
+  {# ACCUMULATION ARCHIVE: Masonry Grid for Older Content #}
+  <section class="accumulating-archive">
+    <h3 class="section-header">ARCHIVE & DISCOVERIES</h3>
+    <div class="multi-column-masonry">
+      {% for article in collections.articles | reverse | slice(7) %}
+        {% include "partials/card-compact.njk" %}
+      {% endfor %}
+    </div>
+  </section>
+
+</main>
+{% endblock %}
