@@ -6,6 +6,8 @@ author: Jacob Opira
 featured: false
 image: /images/uploads/mclelland.jpg
 image_alt: "David McClelland: A Brief Introduction"
+layout_type: "hero" # Options: hero, medium, compact, opinion
+section: "frontpage" # Options: frontpage, philosophy, essays, archive
 ---
 #### *David McClelland was a pioneering **motivation psychologist** who identified three fundamental human needs—**achievement, power, and affiliation**—and developed the TAT-based method to measure them. His work connected individual psychology to societal outcomes, challenged IQ-based assessments, and reshaped how organizations think about competency and motivation.*
 
