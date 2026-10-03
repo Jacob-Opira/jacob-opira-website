@@ -3,45 +3,39 @@
 {% block content %}
 <main class="broadsheet-grid">
 
-  {# TOP TIER: Hero + Secondary Stack #}
+  {# TOP SECTION: Lead Article + Recent Items #}
   <section class="lead-section">
+    {# Get the most recent article #}
     {% set leadArticle = collections.articles | reverse | first %}
-    <div class="lead-hero">
-      {% set article = leadArticle %}
-      {% include "partials/card-hero.njk" %}
-    </div>
+    
+    {% if leadArticle %}
+      <div class="lead-hero">
+        {% set article = leadArticle %}
+        {% include "partials/card-hero.njk" %}
+      </div>
+    {% endif %}
 
+    {# Sidebar: Display next 3 articles #}
     <div class="lead-sidebar">
       <h4 class="section-tag">ALSO TODAY</h4>
-      {% for article in collections.articles | reverse | slice(1, 4) %}
-        {% include "partials/card-compact.njk" %}
+      {% for article in collections.articles | reverse %}
+        {% if loop.index > 1 and loop.index <= 4 %}
+          {% include "partials/card-compact.njk" %}
+        {% endif %}
       {% endfor %}
     </div>
   </section>
 
   <hr class="broadsheet-divider">
 
-  {# SECOND TIER: Opinion / Essay Strip #}
-  <section class="opinion-strip">
-    <h3 class="section-header">ESSAYS & DISPATCHES</h3>
-    <div class="three-column-grid">
-      {% for article in collections.articles | reverse | slice(4, 7) %}
-        <article class="opinion-card">
-          <h4><a href="{{ article.url }}">{{ article.data.title }}</a></h4>
-          <p>{{ article.data.excerpt }}</p>
-        </article>
-      {% endfor %}
-    </div>
-  </section>
-
-  <hr class="broadsheet-divider">
-
-  {# ACCUMULATION ARCHIVE: Masonry Grid for Older Content #}
+  {# ACCUMULATION SECTION: All remaining/older articles #}
   <section class="accumulating-archive">
-    <h3 class="section-header">ARCHIVE & DISCOVERIES</h3>
+    <h3 class="section-header">DISPATCHES & ARCHIVE</h3>
     <div class="multi-column-masonry">
-      {% for article in collections.articles | reverse | slice(7) %}
-        {% include "partials/card-compact.njk" %}
+      {% for article in collections.articles | reverse %}
+        {% if loop.index > 4 %}
+          {% include "partials/card-compact.njk" %}
+        {% endif %}
       {% endfor %}
     </div>
   </section>
