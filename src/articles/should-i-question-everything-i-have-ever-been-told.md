@@ -7,6 +7,8 @@ author: Jacob Opira
 featured: false
 image: /images/uploads/worldtherapy.jpg
 image_alt: '— Is "the world" in the room with us, right now? '
+layout_type: "hero" # Options: hero, medium, compact, opinion
+section: "frontpage" # Options: frontpage, philosophy, essays, archive
 ---
 # A Brief Introduction to Solipsism
 
