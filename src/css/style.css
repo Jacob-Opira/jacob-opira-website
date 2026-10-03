@@ -376,3 +376,14 @@ main {
     grid-template-columns: 1fr;
   }
 }
+/* Editorial Kicker / Category Badge */
+.kicker {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
