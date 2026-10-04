@@ -1,6 +1,6 @@
 ---
 title: The Price of Evasion
-date: 2026-10-04T12:02:00.000+02:00
+date: 2026-10-04T14:25:00.000+02:00
 author: Jacob Opira
 kicker: "Acting and talking straight has a price — evasion is the deferred
   price, with interest.  "
