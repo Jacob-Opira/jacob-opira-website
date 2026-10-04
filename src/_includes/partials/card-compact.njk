@@ -1,12 +1,8 @@
-{% set item = article %}
 <article class="compact-card">
-  {% if item.data.image %}
-    <img src="{{ item.data.image }}" alt="{{ item.data.image_alt | default('') }}" class="thumb">
-  {% endif %}
-  <div class="compact-card_body">
-    <h3><a href="{{ item.url }}">{{ item.data.title }}</a></h3>
-    {% if item.data.deck %}
-      <p>{{ item.data.deck }}</p>
-    {% endif %}
+  {% if article.data.image %}<img class="thumb" src="{{ article.data.image }}" alt="{{ article.data.image_alt | default('') }}">{% endif %}
+  <div class="compact-card__body">
+    {% if article.data.kicker or article.data.category %}<span class="kicker">{{ article.data.kicker or article.data.category }}</span>{% endif %}
+    <h3><a href="{{ article.url }}">{{ article.data.title }}</a></h3>
+    {% if article.data.deck %}<p>{{ article.data.deck }}</p>{% endif %}
   </div>
 </article>
