@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 ---
-{% set posts = collections.articles | reverse %}
+{% set posts = collections.articles | sort(true, false, 'date') %}
 
 <main class="broadsheet-grid">
 
