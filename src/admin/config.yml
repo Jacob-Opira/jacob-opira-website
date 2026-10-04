@@ -7,8 +7,8 @@ backend:
 
 site_url: https://jacob.opira.se
 display_url: https://jacob.opira.se
-media_folder: "src/images"
-public_folder: "/images"
+media_folder: "src/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "articles"
