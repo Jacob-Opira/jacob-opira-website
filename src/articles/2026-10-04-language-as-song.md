@@ -4,7 +4,7 @@ date: 2026-10-04T16:11:00.000+02:00
 author: Jacob Opira
 kicker: Is the categorical distinction between language and music empirically
   defensible?
-deck: — or is it a stipulation of definitional convenience?
+deck: — is the "difference" a stipulation of definitional convenience?
 layout_type: compact
 section: philosophy
 featured: false
