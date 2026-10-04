@@ -11,4 +11,4 @@ featured: false
 image: /images/uploads/rq1-1-.jpeg
 image_alt: A research question
 ---
-This research question examines whether the boundaries between speech and song hold under experimental manipulation (speech-to-song illusion), neural measurement (shared ERP components, overlapping activation), and cross-cultural comparison (speech surrogates, tonal languages).
+This research question examines whether the academic silos and colloquial boundaries that are assumed to exist between speech and song hold under experimental manipulation (speech-to-song illusion), neural measurement (shared ERP components, overlapping activation), and cross-cultural comparison (speech surrogates, tonal languages).
