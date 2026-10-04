@@ -7,7 +7,7 @@ kicker: "Acting and talking straight has a price — evasion is the deferred
 layout_type: compact
 section: philosophy
 featured: false
-image: /images/2choicessamedestination.jpeg
+image: /images/uploads/2choicessamedestination.jpeg
 image_alt: Conflict avoidance for its own sake is not automatically a different
   decision, just a longer route to the same end point.
 ---
