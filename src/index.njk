@@ -1,67 +1,46 @@
 ---
 layout: base.njk
-title: Home
 ---
+{% set posts = collections.articles | reverse %}
 
-<div class="broadsheet-grid">
+<main class="broadsheet-grid">
 
-  {% set posts = collections.articles | reverse %}
-
-  {# Top Tier: Lead Section (Hero + Sidebar) #}
   <section class="lead-section">
-    {% if posts[0] %}
-      <article class="hero-card">
-        {% if posts[0].data.image %}
-          <img src="{{ posts[0].data.image }}" alt="{{ posts[0].data.title }}">
-        {% endif %}
-        <span class="kicker">{{ posts[0].data.section | default("Lead Story") }}</span>
-        <h2><a href="{{ posts[0].url }}">{{ posts[0].data.title }}</a></h2>
-        {% if posts[0].data.deck %}
-          <p class="excerpt">{{ posts[0].data.deck }}</p>
-        {% endif %}
-      </article>
-    {% endif %}
-
-    <aside class="sidebar-stack">
-      <h3 class="middle-tier-header">Also Today</h3>
-      {% for post in posts.slice(1, 4) %}
+    <div class="lead-hero">
+      {% for article in posts.slice(0, 1) %}
+        {% include "partials/card-hero.njk" %}
+      {% endfor %}
+    </div>
+    <div class="lead-sidebar">
+      <h4 class="middle-tier-header">Also Today</h4>
+      {% for article in posts.slice(1, 4) %}
         {% include "partials/card-compact.njk" %}
       {% endfor %}
-    </aside>
+    </div>
   </section>
 
+  {% if posts.length > 4 %}
   <hr class="broadsheet-divider">
-
-  {# Middle Tier: Essays & Perspectives (Rendered when 5+ articles exist) #}
-  {% if posts.length >= 5 %}
-    <section class="middle-tier-section">
-      <h3 class="middle-tier-header">Essays & Perspectives</h3>
-      <div class="three-column-grid">
-        {% for post in posts.slice(4, 7) %}
-          <article class="opinion-card">
-            <span class="kicker">{{ post.data.section | default("Perspective") }}</span>
-            <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-            {% if post.data.deck %}
-              <p class="excerpt">{{ post.data.deck }}</p>
-            {% endif %}
-          </article>
-        {% endfor %}
-      </div>
-    </section>
-
-    <hr class="broadsheet-divider">
+  <section class="middle-tier-section">
+    <h3 class="middle-tier-header">Essays &amp; Perspectives</h3>
+    <div class="three-column-grid">
+      {% for article in posts.slice(4, 7) %}
+        {% include "partials/card-opinion.njk" %}
+      {% endfor %}
+    </div>
+  </section>
   {% endif %}
 
-  {# Lower Tier: Dispatches & Archive (Rendered when 8+ articles exist) #}
-  {% if posts.length >= 8 %}
-    <section class="archive-section">
-      <h3 class="middle-tier-header">Dispatches & Archive</h3>
-      <div class="multi-column-masonry">
-        {% for post in posts.slice(7) %}
-          {% include "partials/card-compact.njk" %}
-        {% endfor %}
-      </div>
-    </section>
+  {% if posts.length > 7 %}
+  <hr class="broadsheet-divider">
+  <section class="accumulating-archive">
+    <h3 class="middle-tier-header">Dispatches &amp; Archive</h3>
+    <div class="multi-column-masonry">
+      {% for article in posts.slice(7) %}
+        {% include "partials/card-compact.njk" %}
+      {% endfor %}
+    </div>
+  </section>
   {% endif %}
 
-</div>
+</main>
