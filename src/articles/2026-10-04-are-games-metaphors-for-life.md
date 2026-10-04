@@ -2,14 +2,14 @@
 title: Are games metaphors for life?
 date: 2026-10-04T16:56:00.000+02:00
 author: Jacob Opira
-kicker: Language as Song
+kicker: Ontology
 deck: Is it possible that many of the games we love owe their popularity to
   being metaphors for life?
 layout_type: compact
 section: archive
 featured: false
 image: /images/uploads/labyrinthgame.jpeg
-image_alt: Life is a game of labyrinth.
+image_alt: A classic game of labyrinth.
 ---
 > **Games that endure tend to dramatize a real human tension — agency vs. fate, self vs. others, growth vs. loss — through mechanics that make that tension feel immediate and solvable. The ones we call "metaphors for life" are the ones where the dramatization is tight enough that players feel the resonance consciously.**
 
