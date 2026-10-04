@@ -1,7 +1,12 @@
 backend:
   name: github
-  repo: jacobopira/jacob-opira-website
+  repo: Jacob-Opira/jacob-opira-website
   branch: main
+  base_url: https://jacob.opira.se
+  auth_endpoint: auth
+
+site_url: https://jacob.opira.se
+display_url: https://jacob.opira.se
 media_folder: "src/images"
 public_folder: "/images"
 
@@ -11,13 +16,13 @@ collections:
     folder: "src/articles"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} · {{date}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Author", name: "author", widget: "string", default: "Kevin", required: false }
+      - { label: "Kicker (small label above headline)", name: "kicker", widget: "string", required: false }
       - { label: "Deck / Subtitle", name: "deck", widget: "string", required: false }
-      
-      # Controls visual card archetype on the layout
       - label: "Layout Type"
         name: "layout_type"
         widget: "select"
@@ -27,8 +32,6 @@ collections:
           - { label: "Compact (Sidebar/Archive)", value: "compact" }
           - { label: "Text-Only (Opinion Strip)", value: "opinion" }
         default: "compact"
-
-      # Controls horizontal broadsheet section placement
       - label: "Section Placement"
         name: "section"
         widget: "select"
@@ -37,8 +40,7 @@ collections:
           - { label: "Essays & Dispatches", value: "essays" }
           - { label: "Philosophy & Inquiry", value: "philosophy" }
           - { label: "Archive / Deep Storage", value: "archive" }
-        default: "frontpage"
-
+        default: "archive"
       - { label: "Featured Post", name: "featured", widget: "boolean", default: false }
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Image Alt Text", name: "image_alt", widget: "string", required: false }
