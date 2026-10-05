@@ -9,10 +9,6 @@ sections:
   - philosophy
 topics:
   - philosophy
-  - ontology
-  - epistemology
-  - metaphysics
-  - investigating this thing called life
   - ""
 featured: false
 image: /images/uploads/nightvision_.jpeg
