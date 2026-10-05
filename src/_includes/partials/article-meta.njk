@@ -1,0 +1,12 @@
+{% if sections or topics %}
+<aside class="article-meta">
+  {% set secList = sections | asList %}
+  {% if secList.length %}
+  <p class="article-meta__row"><span class="article-meta__label">Filed in</span>{% for s in collections.sections %}{% if s.fileSlug in secList %}<a href="{{ s.url }}">{{ s.data.title }}</a>{% endif %}{% endfor %}</p>
+  {% endif %}
+  {% set topicNames = topics | asList %}
+  {% if topicNames.length %}
+  <p class="article-meta__row"><span class="article-meta__label">See more on</span>{% for t in topicNames %}<a href="/topic/{{ t | topicSlug }}/">{{ t }}</a>{% endfor %}</p>
+  {% endif %}
+</aside>
+{% endif %}
