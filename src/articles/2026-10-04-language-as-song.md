@@ -10,6 +10,7 @@ deck: Is the categorical distinction between language and music empirically
 layout_type: medium
 sections:
   - philosophy
+  - linguistics
 featured: false
 image: /images/uploads/rq1-1-.jpeg
 ---
