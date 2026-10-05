@@ -7,7 +7,7 @@ author: Jacob Opira
 kicker: Linguistics | Communication
 deck: Is the categorical distinction between language and music empirically
   defensible? Or is the "difference" a stipulation of definitional convenience?
-layout_type: compact
+layout_type: medium
 sections:
   - philosophy
 featured: false
