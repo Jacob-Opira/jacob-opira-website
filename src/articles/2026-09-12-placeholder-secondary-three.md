@@ -30,4 +30,6 @@ Dressed in a light blue sleeveless top and pink scrunchie while speaking into a 
 >
 > *"Have to be like you can't bully us into not saying people deserve to live and don't deserve to be bombed."*
 
-The video highlights an ongoing debate regarding the responsibility of digital creators and public figures to engage with global political issues.
+The video highlights an ongoing debate regarding the responsibility of digital creators and public figures to engage with global political issues.  
+
+[ https://www.tiktok.com/@msrachelforlittles/video/7693189929534311694](https://www.tiktok.com/@msrachelforlittles/video/7693189929534311694)
