@@ -1,12 +1,30 @@
 ---
-title: "A fourth placeholder headline"
-date: 2026-09-12
-deck: "A quick take, filed under a short deck."
-author: "Your Name"
+image_alt: Placeholder image — replace via the Image field in the editor
+section: frontpage
+title: Ms Rachel Calls Out 'Uncancellable' Celebrities Over Gaza Silence in
+  Viral Podcast Appearance
+date: 2026-10-05T22:02:00.000+02:00
+author: Jacob Opira
+deck: Miss Rachel spoke on the podcast It's Open with Ilana Glazer, hosted by
+  Jewish comedian Ilana Glazer.
+layout_type: hero
 featured: false
-image: "https://picsum.photos/seed/dispatch-four/900/675"
-image_alt: "Placeholder image — replace via the Image field in the editor"
-layout_type: "hero" # Options: hero, medium, compact, opinion
-section: "frontpage" # Options: frontpage, philosophy, essays, archive
+image: https://picsum.photos/seed/dispatch-four/900/675
 ---
-Some entries will be short — a quick reaction to something you watched or read. That's fine; the body field can be one paragraph or several.
+
+
+Miss Rachel spoke on the podcast *It's Open with Ilana Glazer,* hosted by Jewish comedian Ilana Glazer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+, a space to celebrate the little things in life and to sort out a shared reality in the insane world we're all trying to survive. Solo and guest eps. Drops every Thursday @ 7AM.
