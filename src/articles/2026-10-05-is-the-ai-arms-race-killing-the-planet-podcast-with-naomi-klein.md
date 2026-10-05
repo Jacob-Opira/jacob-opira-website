@@ -10,7 +10,12 @@ featured: false
 image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcapitalandmain.com%2Fwp-content%2Fuploads%2F2025%2F05%2FGettyImages-2156786804-scaled.jpg&f=1&nofb=1&ipt=cd2c79a789004140f3c32df135b2a20b40a27ca05e9412aba41cee78f86ea1ad&ipo=images
 image_alt: Podcast
 ---
-
 [In this interview](https://www.themaybe.org/reframing-impact/naomi-klein), Naomi Klein argues that the current “arms race” model for large scale AI, driven by unchecked compute demands and breakneck corporate competition, is fundamentally unsustainable and incompatible with climate goals. Instead, the resource intensity of the “bigger is better” AI paradigm is proving to be a lifeline to the fossil fuel industry, particularly as renewable markets begin to emerge.
 
+ Naomi Klein is a journalist, author, and professor who critiques corporate power, neoliberal economics, and the military state through the lens of climate; she has a lot to say on the narrative of AI as a climate solution.
+
+Klein argues that smaller, more curated versions of AI could be useful, but we are funding the wrong things: massive build-outs. Hyperlocal resistance and collectively dreaming of a better future are the antidote, she says.
+
 [Read the full essay](https://ainowinstitute.org/publications/naomi-klein-climate)
+
+[Watch the full conversation between Naomi Klein and Alix Dunn here](https://youtu.be/P11sRvbuBDI).
