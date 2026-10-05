@@ -1,0 +1,12 @@
+/* ---- Article page ---- */
+.article { padding-top: 24px; max-width: 680px; margin: 0 auto; }
+.article__headline { font-size: clamp(1.6rem, 3.6vw, 2.3rem); line-height: 1.08; margin: 0 0 10px; }
+.article__deck { font-size: 1.1rem; color: #333; line-height: 1.4; margin: 0 0 10px; }
+.article__meta { border-top: 1px solid var(--rule-soft); border-bottom: 1px solid var(--rule-soft); padding: 8px 0; margin-bottom: 18px; }
+.article__image { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; margin-bottom: 6px; filter: grayscale(15%); }
+.article__image-caption { font-family: var(--sans); font-size: 0.76rem; color: var(--muted); margin: 0 0 22px; }
+.article__body { font-size: 1.05rem; line-height: 1.55; }
+.article__body p { margin: 0 0 1.1em; max-width: 66ch; }
+.back-link { display: inline-block; margin-bottom: 14px; font-family: var(--sans); font-size: 0.85rem; text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+/* END article.css */
