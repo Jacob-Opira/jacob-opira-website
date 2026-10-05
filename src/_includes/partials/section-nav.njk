@@ -1,0 +1,7 @@
+{% if collections.navSections.length %}
+<nav class="section-nav" aria-label="Sections">
+  {% for s in collections.navSections %}
+    <a href="{{ s.url }}"{% if page.url == s.url %} aria-current="page"{% endif %}>{{ s.data.title }}</a>
+  {% endfor %}
+</nav>
+{% endif %}
