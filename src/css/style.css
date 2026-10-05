@@ -135,3 +135,9 @@ main {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color:
+  color: var(--accent);
+  margin: 0 0 6px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--ink);
+}
+/* END style.css */
