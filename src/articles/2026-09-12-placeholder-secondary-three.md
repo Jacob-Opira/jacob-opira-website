@@ -14,8 +14,6 @@ image_alt: Ms Rachel and Ilana Glazer on the podcast It's Open with Ilana Glazer
 section: frontpage
 featured: false
 ---
-# **Ms Rachel Calls Out 'Uncancellable' Celebrities Over Gaza Silence**
-
 **Source:** [@msrachelforlittles](https://www.tiktok.com/@msrachelforlittles) via TikTok | **Guest Appearance:** [@itsopen.podcasts](https://www.tiktok.com/@itsopen.podcasts)
 **Category:** Media & Culture / Current Affairs
 **Engagement Metrics:** 112.1K Likes | 1,119 Comments | 3,656 Saves | 2,174 Shares
