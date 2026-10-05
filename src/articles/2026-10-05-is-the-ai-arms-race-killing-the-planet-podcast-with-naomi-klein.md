@@ -1,9 +1,9 @@
 ---
-title: '"Is the AI Arms Race Killing the Planet?" (podcast with Naomi Klein)'
+title: '"Is the AI Arms Race Killing the Planet?"'
 date: 2026-10-05T18:11:00.000+02:00
 author: Jacob Opira
 kicker: AI | DYSTOPIA
-deck: Written companion piece by AI Now Institute
+deck: Video Podcast with Naomi Klein | Companion piece by AI Now Institute
 layout_type: compact
 section: essays
 featured: false
