@@ -11,6 +11,7 @@ layout_type: medium
 sections:
   - philosophy
   - linguistics
+  - communication
 featured: false
 image: /images/uploads/rq1-1-.jpeg
 ---
