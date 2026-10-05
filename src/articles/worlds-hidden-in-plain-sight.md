@@ -1,12 +1,22 @@
 ---
 title: Worlds Hidden in Plain Sight
 date: 2026-10-03T11:46:00.000+02:00
+author: Jacob Opira
 deck: 'The claim is roughly: There is a parallel world, coexisting with "our
   own", hidden from biological vision yet accessible to other senses.'
-author: Jacob Opira
+layout_type: medium
+sections:
+  - philosophy
+topics:
+  - philosophy
+  - ontology
+  - epistemology
+  - metaphysics
+  - investigating this thing called life
+  - ""
 featured: false
 image: /images/uploads/nightvision_.jpeg
-image_alt: Introduction to (just a few) Frameworks of Inner Vision
+image_alt: A Brief introduction to a Few Frameworks about "Inner Vision"
 ---
 Buddhism — vipassanā and the two truths
 Conventional truth (*saṃvṛti*) vs. ultimate truth (*paramārtha*). Ordinary sight sees persons, things, selves. *Insight* sees impermanence, unsatisfactoriness, not-self — a world hidden *by* the ordinary view, not behind it. Zen's *kenshō*: "seeing one's nature."
