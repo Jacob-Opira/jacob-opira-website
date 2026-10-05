@@ -13,8 +13,6 @@ image: /images/uploads/mclelland.jpg
 ---
 #### *David McClelland was a pioneering **motivation psychologist** who identified three fundamental human needs—**achievement, power, and affiliation**—and developed the TAT-based method to measure them. His work connected individual psychology to societal outcomes, challenged IQ-based assessments, and reshaped how organizations think about competency and motivation.*
 
-
-
 # David McClelland: A Brief Introduction
 
 **David McClelland** (1917–1998) was an American psychologist renowned for his work on human motivation, particularly the **Achievement Motivation Theory** (also called Need Theory or n-Achievement theory). He pioneered the study of how psychological needs drive behavior and how these needs vary across individuals and cultures.
@@ -64,7 +62,3 @@ McClelland argued that **IQ and personality tests were poor predictors of job c
 * **Measurement issues** – TAT scoring requires trained coders and raises reliability questions.
 * **Cultural variation** – While McClelland acknowledged cultural differences, critics argue the framework reflects Western individualist values.
 * **Oversimplification** – The three-need model may not capture the full complexity of human motivation.
-
-## Relevance to Other Fields
-
-## In Short
