@@ -1,6 +1,5 @@
 ---
-title: Ms Rachel Calls Out 'Uncancellable' Celebrities Over Gaza Silence in
-  Viral Podcast Appearance
+title: Ms Rachel Calls Out 'Uncancellable' Celebrities Over Gaza Silence
 date: 2026-10-05T22:02:00.000+02:00
 author: Jacob Opira
 kicker: Sociology | Ethics
