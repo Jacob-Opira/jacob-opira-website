@@ -1,0 +1,21 @@
+---
+layout: base.njk
+pagination:
+  data: collections.topicList
+  size: 1
+  alias: topic
+permalink: "/topic/{{ topic.slug }}/"
+eleventyComputed:
+  title: "{{ topic.name }}"
+---
+{% set posts = collections.articles | withTopic(topic.slug) %}
+<main class="broadsheet-grid section-page">
+  <header class="section-head">
+    <p class="section-head__eyebrow">Tag</p>
+    <h1 class="section-head__title">{{ topic.name }}</h1>
+    <p class="section-head__desc">{{ posts.length }} {% if posts.length == 1 %}piece{% else %}pieces{% endif %}</p>
+  </header>
+  <div class="multi-column-masonry">
+    {% for article in posts %}{% include "partials/card-compact.njk" %}{% endfor %}
+  </div>
+</main>
