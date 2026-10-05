@@ -10,7 +10,8 @@ sections:
   - ethics
 featured: false
 image: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIF.4Poj0KG5hFpSOBdAEN6PxQ%3Fr%3D0%26pid%3DApi&f=1&ipt=71133de7612b1706ff608cceef16cdbb9144e187ad3de13d4edd6598a1c66fd0&ipo=images
-image_alt: Greta Thunberg’s TikTok account doesn’t have the blue verification badge.
+image_alt: Greta Thunberg’s TikTok account, if really hers, doesn’t have the
+  blue verification badge.
 ---
 Greta Thunberg is a Swedish climate activist who became internationally known for campaigning against climate change and demanding stronger action from governments.
 
