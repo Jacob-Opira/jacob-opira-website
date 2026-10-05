@@ -1,0 +1,32 @@
+---
+layout: base.njk
+---
+{% set posts = collections.articles | inSection(page.fileSlug) %}
+<main class="broadsheet-grid section-page">
+  <header class="section-head">
+    <p class="section-head__eyebrow">Section</p>
+    <h1 class="section-head__title">{{ title }}</h1>
+    {% if description %}<p class="section-head__desc">{{ description }}</p>{% endif %}
+  </header>
+
+  {% if content | trim %}<div class="section-intro">{{ content | safe }}</div>{% endif %}
+
+  {% if posts.length %}
+    <section class="lead-section">
+      <div class="lead-hero">
+        {% for article in posts.slice(0, 1) %}{% include "partials/card-hero.njk" %}{% endfor %}
+      </div>
+      <div class="lead-sidebar">
+        {% for article in posts.slice(1, 4) %}{% include "partials/card-compact.njk" %}{% endfor %}
+      </div>
+    </section>
+    {% if posts.length > 4 %}
+      <hr class="broadsheet-divider">
+      <div class="multi-column-masonry">
+        {% for article in posts.slice(4) %}{% include "partials/card-compact.njk" %}{% endfor %}
+      </div>
+    {% endif %}
+  {% else %}
+    <p class="section-empty">Nothing filed here yet.</p>
+  {% endif %}
+</main>
