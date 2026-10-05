@@ -1,13 +1,14 @@
 ---
-image_alt: Placeholder image — replace via the Image field in the editor
-section: frontpage
 title: Ms Rachel Calls Out 'Uncancellable' Celebrities Over Gaza Silence in
   Viral Podcast Appearance
 date: 2026-10-05T22:02:00.000+02:00
 author: Jacob Opira
 deck: Miss Rachel spoke on the podcast It's Open with Ilana Glazer, hosted by
   Jewish comedian Ilana Glazer.
-layout_type: hero
+layout_type: medium
+topics: []
+image_alt: "Ms Rachel and Ilana Glazer on "
+section: frontpage
 featured: false
 image: https://picsum.photos/seed/dispatch-four/900/675
 ---
