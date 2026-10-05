@@ -4,7 +4,7 @@ date: 2026-10-05T22:02:00.000+02:00
 author: Jacob Opira
 kicker: Sociology | Ethics
 deck: Miss Rachel spoke on the podcast It's Open with Ilana Glazer, hosted by
-  Jewish comedian Ilana Glazer.
+  Jewish satirist Ilana Glazer.
 layout_type: medium
 sections:
   - ethics
