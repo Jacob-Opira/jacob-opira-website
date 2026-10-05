@@ -1,0 +1,4 @@
+{
+  "layout": "section.njk",
+  "permalink": "/section/{{ page.fileSlug }}/"
+}
