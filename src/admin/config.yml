@@ -32,16 +32,32 @@ collections:
           - { label: "Compact (Sidebar/Archive)", value: "compact" }
           - { label: "Text-Only (Opinion Strip)", value: "opinion" }
         default: "compact"
-      - label: "Section Placement"
-        name: "section"
-        widget: "select"
-        options:
-          - { label: "Front Page Lead", value: "frontpage" }
-          - { label: "Essays & Dispatches", value: "essays" }
-          - { label: "Philosophy & Inquiry", value: "philosophy" }
-          - { label: "Archive / Deep Storage", value: "archive" }
-        default: "archive"
+      - label: "Sections (departments, pick one or more)"
+        name: "sections"
+        widget: "relation"
+        collection: "sections"
+        search_fields: ["title"]
+        value_field: "{{slug}}"
+        display_fields: ["title"]
+        multiple: true
+        required: false
+      - { label: "Tags (separate with commas)", name: "topics", widget: "list", required: false }
       - { label: "Featured Post", name: "featured", widget: "boolean", default: false }
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Image Alt Text", name: "image_alt", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "sections"
+    label: "Sections (departments)"
+    folder: "src/sections"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "One-line description", name: "description", widget: "string", required: false }
+      - { label: "Position in navigation (lower = further left)", name: "order", widget: "number", value_type: "int", default: 10, min: 0, required: false }
+      - { label: "Show in navigation", name: "show_in_nav", widget: "boolean", default: true }
+      - { label: "Intro text (optional)", name: "body", widget: "markdown", required: false }
