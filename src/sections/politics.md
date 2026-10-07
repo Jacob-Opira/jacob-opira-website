@@ -1,5 +1,5 @@
 ---
-title: Economics
+title: Funding
 order: 10
 show_in_nav: true
 ---
