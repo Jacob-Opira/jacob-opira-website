@@ -1,5 +1,5 @@
 ---
-title: Ivan Atkinson is not related to Rowan
+title: Ivan is not related to Rowan
 date: 2026-10-08T13:30:00.000+02:00
 author: Jacob Opira
 kicker: Entertainment | Namesakes
