@@ -9,6 +9,7 @@ sections:
   - sociology
 featured: false
 image: /images/uploads/atkinsonivan.png
+image_alt: Mobland S02E01 is Out.
 ---
 ### The Atkinson Connection That Isn’t
 
