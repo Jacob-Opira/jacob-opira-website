@@ -1,8 +1,36 @@
+const fs = require("fs");
+const path = require("path");
+
 module.exports = function (eleventyConfig) {
   // Static assets copied as-is into the built site
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/admin");
+
+  // ---- Scheduled publishing ----
+  // Articles dated in the future are skipped entirely at build time.
+  // They appear on the first build after their date has passed.
+  (function skipFutureArticles() {
+    const dir = "src/articles";
+    let files = [];
+    try {
+      files = fs.readdirSync(dir).filter((f) => f.endsWith(".md"));
+    } catch (e) {
+      return;
+    }
+    const now = Date.now();
+    files.forEach((f) => {
+      const text = fs.readFileSync(path.join(dir, f), "utf8");
+      const head = text.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+      if (!head) return;
+      const m = head[1].match(/^date:\s*["']?([^"'\r\n]+?)["']?\s*$/m);
+      if (!m) return;
+      const t = Date.parse(m[1]);
+      if (!Number.isNaN(t) && t > now) {
+        eleventyConfig.ignores.add(path.posix.join(dir, f));
+      }
+    });
+  })();
 
   // ---- helpers ----
   const asList = (v) => {
@@ -66,6 +94,14 @@ module.exports = function (eleventyConfig) {
     return (articles || []).filter((a) => asList(a.data.topics).some((t) => topicSlug(t) === slug));
   });
 
+  // Put the featured article first (newest featured wins), keep the rest in order
+  eleventyConfig.addFilter("leadFirst", function (arr) {
+    const all = arr || [];
+    const lead = all.find((item) => item.data && item.data.featured);
+    if (!lead) return all;
+    return [lead, ...all.filter((item) => item.url !== lead.url)];
+  });
+
   // Human-readable date, e.g. "23 September 2026"
   eleventyConfig.addFilter("readableDate", function (dateObj) {
     const d = new Date(dateObj);
@@ -79,9 +115,7 @@ module.exports = function (eleventyConfig) {
   // Today's date at build time, for the masthead dateline
   eleventyConfig.addGlobalData("buildDate", () => new Date());
 
-  // Given the full articles collection, return { lead, secondaries }.
-  // Lead = the article marked featured: true, or the most recent one.
-  // Secondaries = the next 4 most recent, excluding the lead.
+  // Older helper, no longer used by the front page
   eleventyConfig.addFilter("frontPage", function (arr) {
     const all = arr || [];
     const lead = all.find((item) => item.data && item.data.featured) || all[0] || null;
