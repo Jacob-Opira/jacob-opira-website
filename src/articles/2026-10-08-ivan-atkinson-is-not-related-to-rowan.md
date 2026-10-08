@@ -5,6 +5,8 @@ author: Jacob Opira
 kicker: Entertainment | Namesakes
 deck: One of the Mobland executive producers is named Atkinson
 layout_type: medium
+sections:
+  - sociology
 featured: false
 image: /images/uploads/atkinsonivan.png
 ---
