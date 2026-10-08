@@ -3,8 +3,8 @@ title: Ivan Atkinson is not related to Rowan
 date: 2026-10-08T13:30:00.000+02:00
 author: Jacob Opira
 kicker: Entertainment | Namesakes
-deck: One of the Mobland executive producers is named Ivan Atkinson
-layout_type: compact
+deck: One of the Mobland executive producers is named Atkinson
+layout_type: medium
 featured: false
 image: /images/uploads/atkinsonivan.png
 ---
