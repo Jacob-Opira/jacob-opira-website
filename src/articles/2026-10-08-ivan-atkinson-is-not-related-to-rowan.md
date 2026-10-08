@@ -7,7 +7,7 @@ deck: One of the Mobland executive producers is named Atkinson
 layout_type: medium
 sections:
   - sociology
-featured: false
+featured: true
 image: /images/uploads/atkinsonivan.png
 image_alt: Mobland S02E01 is Out.
 ---
